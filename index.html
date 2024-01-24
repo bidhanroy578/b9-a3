@@ -9,6 +9,13 @@
     <!-- tailwind css and daisy grandma -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .cntr {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -53,7 +60,7 @@
                 </div>
                 <div class="navbar-end">
                     <!-- search icon  -->
-                    <button class="btn btn-ghost btn-circle hidden md:flex">
+                    <button class="btn btn-ghost btn-circle hidden lg:flex">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -66,7 +73,7 @@
             </div>
         </nav>
     </header>
-    <main class="md:w-[90%] ml-auto mr-auto">
+    <main class="">
         <!-- carousel here  -->
         <section>
             <div class="mt-10 rounded-3xl ml-5 mr-5">
@@ -90,97 +97,167 @@
             </div>
             </div>
         </section>
-        <hr class="bg-black-300 border-dashed border-2 ">
+
+        <hr class=" border-dashed border-2 mt-10 mb-10">
 
 
         <!-- professional hockey club here  card section  -->
 
         <section>
             <div>
-                <h3 class="text-2xl font-extrabold	 xl:text-3xl text-center">Professional Hockeys Club</h3>
-                <p class="text-base font-medium text-center">Dit amet consectetur. Condimentum dignissim adipiscing
+                <h3 class="text-2xl font-extrabold	 lg:text-3xl text-center">Professional Hockeys Club</h3>
+                <p class="text-base font-medium text-center pl-5 pr-5 ">Dit amet consectetur. Condimentum dignissim adipiscing
                     aliquam turpis placerat dolor. Purus urna in sit
                     nullam proin.</p>
             </div>
 
+            <hr class=" border-dashed border-2 mt-5 mb-5">
+            <!-- progress cards -->
+            <div class=" flex flex-col justify-center lg:flex-row">
+
+                <!-- card 1 -->
+                <div class="card w-96 bg-base-100 ml-auto mr-auto">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-red-500" style="--value:87; --thickness:15px; --size:8rem"
+                            role="progressbar">87%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+
+                        <h2 class="card-title">Prayer Facility</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-dashed border-2 ">
+
+
+                <!-- card 2 -->
+
+                <div class="card w-96 bg-base-100 ml-auto mr-auto">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-green-500" style="--value:95; --thickness:15px; --size:8rem"
+                            role="progressbar">95%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+
+                        <h2 class="card-title">Experienced Coach</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class=" border-dashed border-2 ">
+
+
+                <!-- card 3 -->
+
+                <div class="card w-96 bg-base-100 ml-auto mr-auto">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-yellow-500" style="--value:90; --thickness:15px; --size:8rem"
+                            role="progressbar">90%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+
+                        <h2 class="card-title">Senior Player</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr class="border-dashed border-2 ">
+
+
+                <!-- card 4 -->
+
+                <div class="card w-96 bg-base-100 ml-auto mr-auto">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-blue-500" style="--value:80; --thickness:15px; --size:8rem"
+                            role="progressbar">80%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+
+                        <h2 class="card-title">Training Ground</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <hr class=" border-dashed border-2 mt-5 mb-10">
+
+
+        <!-- program section  -->
+        <section class="">
+
             <div class="">
-                <!-- progress cards -->
-                <div class=" flex flex-col justify-center lg:flex-row">
+                <h3 class="text-center text-2xl font-extrabold	 lg:text-3xl">
+                    Programs Sections
+                </h3>
+                <p class="text-center text-base font-medium pl-5 pr-5">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                    in
+                    sit nullam proin.
+                </p>
+            </div>
 
-                    <!-- card 1 -->
-                    <div class="card w-96 bg-base-100 ml-auto mr-auto">
-                        <figure class="px-10 pt-10">
-                            <div class="radial-progress text-red-500" style="--value:87; --thickness:15px; --size:8rem"
-                                role="progressbar">87%</div>
-                        </figure>
-                        <div class="card-body items-center text-center">
+            <hr class=" border-dashed border-2 mt-10 mb-10">
 
-                            <h2 class="card-title">Prayer Facility</h2>
-                            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
-                            <div class="card-actions">
+
+            <div class=" grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-5	">
+                <!-- card 1 -->
+                <div class="pl-5 pr-5">
+                    <div class="card w-[100%] bg-base-100 shadow-xl image-full ">
+                        <figure><img src="/Images/2.png" alt="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions ">
+                                <button class="btn btn-secondary bg-red-500 border-red-500">Register Now!</button>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <hr class="bg-black-300 border-dashed border-2 ">
 
+                <!-- card 2 -->
 
-                    <!-- card 2 -->
-
-                    <div class="card w-96 bg-base-100 ml-auto mr-auto">
-                        <figure class="px-10 pt-10">
-                            <div class="radial-progress text-green-500"
-                                style="--value:95; --thickness:15px; --size:8rem" role="progressbar">95%</div>
-                        </figure>
-                        <div class="card-body items-center text-center">
-
-                            <h2 class="card-title">Experienced Coach</h2>
-                            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
-                            <div class="card-actions">
+                <div class="pl-5 pr-5">
+                    <div class="card w-[100%] bg-base-100 shadow-xl image-full ">
+                        <figure><img src="/Images/3.png" alt="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions ">
+                                <button class="btn btn-secondary bg-red-500 border-red-500">Register Now!</button>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <hr class="bg-black-300 border-dashed border-2 ">
+                <!-- card 3 -->
 
-
-                    <!-- card 3 -->
-
-                    <div class="card w-96 bg-base-100 ml-auto mr-auto">
-                        <figure class="px-10 pt-10">
-                            <div class="radial-progress text-yellow-500"
-                                style="--value:90; --thickness:15px; --size:8rem" role="progressbar">90%</div>
-                        </figure>
-                        <div class="card-body items-center text-center">
-
-                            <h2 class="card-title">Senior Player</h2>
-                            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
-                            <div class="card-actions">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <hr class="bg-black-300 border-dashed border-2 ">
-
-
-                    <!-- card 4 -->
-
-                    <div class="card w-96 bg-base-100 ml-auto mr-auto">
-                        <figure class="px-10 pt-10">
-                            <div class="radial-progress text-blue-500" style="--value:80; --thickness:15px; --size:8rem"
-                                role="progressbar">80%</div>
-                        </figure>
-                        <div class="card-body items-center text-center">
-
-                            <h2 class="card-title">Training Ground</h2>
-                            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
-                            <div class="card-actions">
+                <div class="lg:col-span-2 pl-5 pr-5 ">
+                    <div class="card w-[100%] bg-base-100 shadow-xl image-full ">
+                        <figure><img src="/Images/4.png" alt="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions ">
+                                <button class="btn btn-secondary bg-red-500 border-red-500">Register Now!</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
     <footer>
