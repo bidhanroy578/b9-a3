@@ -53,7 +53,7 @@
                 </div>
                 <div class="navbar-end">
                     <!-- search icon  -->
-                    <button class="btn btn-ghost btn-circle">
+                    <button class="btn btn-ghost btn-circle hidden md:flex">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -67,9 +67,30 @@
         </nav>
     </header>
 
-
     <main>
+        <!-- carousel here  -->
+        <section>
+            <div class="mt-10 rounded-3xl ml-5 mr-5">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="/Images/1.png" class="w-full" />
+                        <div class="absolute flex justify-between  transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle bg-transparent">❮</a>
+                            <a href="#slide2" class="btn btn-circle bg-transparent">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="/Images/2.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle bg-transparent">❮</a>
+                            <a href="#slide1" class="btn btn-circle bg-transparent">❯</a>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
     <footer>
 
