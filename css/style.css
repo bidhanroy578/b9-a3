@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .h-fnt {
+        color: #131318;
+        text-align: center;
+        font-weight: 800;
+    }
+
+}
+
+
+@layer components {
+        {}
+}
+
+/*     
+.h-fnt {
+    @apply text-center text-2xl font-extrabold lg:text-3xl
+}
+
+.p-fnt {
+    @apply text-center text-base font-medium pl-5 pr-5
+} */
