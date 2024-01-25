@@ -2,23 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .h-fnt {
-        color: #131318;
-        text-align: center;
-        font-weight: 800;
-    }
+
+
+
+
+
+
+.p-fnt {
+    color: rgba(255, 255, 255, 0.60);
+
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    
+}
+
+.p-fnt-mbl {
+    color: rgba(255, 255, 255, 0.60);
+
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.font-manrop{
+    font-family: 'Manrope', sans-serif;
 
 }
 
 
-@layer components {
-       .p-fnt {
+.h-fnt {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+}
 
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-       }
+.h-fnt-mbl {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 
 /*     

@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- custom font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- tailwind css and daisy grandma -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,11 +31,11 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="ml-auto mr-auto lg:ml-20 lg:mr-20">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
 
-                    <!-- for small screen  -->
+
 
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -44,23 +50,23 @@
                             <li><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
-                            <li><a>Blog 3</a></li>
-                            <li><a>Blog 3</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
                         </ul>
                     </div>
                     <a class="btn btn-ghost text-xl">Hockey<span
                             class="text-red-600 m-0 p-0 tracking-tight	">'</span>s</a>
                 </div>
 
-                <!-- for large screen  -->
+
 
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 3</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
@@ -78,10 +84,10 @@
             </div>
         </nav>
     </header>
-    <main class="">
+    <main class="ml-auto mr-auto lg:ml-20 lg:mr-20">
         <!-- carousel here  -->
         <section>
-            <div class="mt-10 rounded-3xl ml-5 mr-5">
+            <div class="mt-10 rounded-3xl ml-5 mr-5 flex flex-col lg:flex-row gap-5 relative">
                 <div class="carousel w-full">
                     <div id="slide1" class="carousel-item relative w-full">
                         <img src="/Images/1.png" class="w-full" />
@@ -99,6 +105,11 @@
                     </div>
 
                 </div>
+                <div class="bg-black p-6 rounded-2xl text-white lg:w-[40%] h-[10rem] lg:absolute right-5 bottom-5">
+                    <h3 class="h-fnt text-xl">Meet all the heroes from the field</h3>
+                    <p class="p-fnt-mbl lg:text-[16px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                        turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
             </div>
             </div>
         </section>
@@ -110,10 +121,11 @@
 
         <section>
             <div>
-                <h3 class="text-2xl font-extrabold	 lg:text-3xl text-center">Professional Hockeys Club</h3>
-                <p class="text-base font-medium text-center pl-5 pr-5 ">Dit amet consectetur. Condimentum dignissim
+                <h3 class="h-fnt-mbl lg:text-4xl mb-3 lg:mb-5 text-center">Professional Hockeys Club</h3>
+                <p class=" p-fnt-mbl text-slate-400 lg:text-[16px] pl-5 pr-5 ">Dit amet consectetur. Condimentum
+                    dignissim
                     adipiscing
-                    aliquam turpis placerat dolor. Purus urna in sit
+                    aliquam turpis placerat dolor. <br> Purus urna in sit
                     nullam proin.</p>
             </div>
 
@@ -124,13 +136,13 @@
                 <!-- card 1 -->
                 <div class="card w-96 bg-base-100 ml-auto mr-auto">
                     <figure class="px-10 pt-10">
-                        <div class="radial-progress text-red-500" style="--value:87; --thickness:15px; --size:8rem"
+                        <div class=" radial-progress text-red-500" style="--value:87; --thickness:15px; --size:8rem"
                             role="progressbar">87%</div>
                     </figure>
                     <div class="card-body items-center text-center">
 
                         <h2 class="card-title">Prayer Facility</h2>
-                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        <p class=" text-slate-400">Amet consectetur. Condimentum dignissim adipiscing .</p>
                         <div class="card-actions">
                         </div>
                     </div>
@@ -149,7 +161,7 @@
                     <div class="card-body items-center text-center">
 
                         <h2 class="card-title">Experienced Coach</h2>
-                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        <p class=" text-slate-400">Amet consectetur. Condimentum dignissim adipiscing .</p>
                         <div class="card-actions">
                         </div>
                     </div>
@@ -168,7 +180,7 @@
                     <div class="card-body items-center text-center">
 
                         <h2 class="card-title">Senior Player</h2>
-                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        <p class=" text-slate-400">Amet consectetur. Condimentum dignissim adipiscing .</p>
                         <div class="card-actions">
                         </div>
                     </div>
@@ -188,7 +200,7 @@
                     <div class="card-body items-center text-center">
 
                         <h2 class="card-title">Training Ground</h2>
-                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        <p class=" text-slate-400">Amet consectetur. Condimentum dignissim adipiscing .</p>
                         <div class="card-actions">
                         </div>
                     </div>
@@ -204,11 +216,12 @@
         <section class="">
 
             <div class="">
-                <h3 class="text-center text-2xl font-extrabold	 lg:text-3xl">
-                    Programs Sections
+                <h3 class="h-fnt-mbl text-center  lg:text-4xl mb-5 ">
+                    Program Sections
                 </h3>
-                <p class="text-center text-base font-medium pl-5 pr-5">
-                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                <p class="p-fnt-mbl text-slate-400 lg:text-[16px] pl-5 pr-5">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus
+                    urna
                     in
                     sit nullam proin.
                 </p>
@@ -223,8 +236,10 @@
                     <div class="card w-[100%] bg-base-100 shadow-xl image-full ">
                         <figure><img src="/Images/2.png" alt="" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <h2 class="card-title lg:mt-16 h-fnt-mbl lg:text-[28px]">Junior Program</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
                             <div class="card-actions ">
                                 <button class="btn btn-secondary bg-red-500 border-red-500">Register Now!</button>
                             </div>
@@ -239,8 +254,10 @@
                     <div class="card w-[100%] bg-base-100 shadow-xl image-full ">
                         <figure><img src="/Images/3.png" alt="" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <h2 class="card-title lg:mt-16 h-fnt-mbl lg:text-[28px]">Teenager Program</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
                             <div class="card-actions ">
                                 <button class="btn btn-secondary bg-red-500 border-red-500">Register Now!</button>
                             </div>
@@ -254,8 +271,10 @@
                     <div class="card w-[100%] bg-base-100 shadow-xl image-full ">
                         <figure><img src="/Images/4.png" alt="" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <h2 class="card-title lg:mt-40 h-fnt-mbl lg:text-[28px]">Professional Program</h2>
+                            <p class=" max-w-[520px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
                             <div class="card-actions ">
                                 <button class="btn btn-secondary bg-red-500 border-red-500">Register Now!</button>
                             </div>
@@ -266,21 +285,22 @@
 
         </section>
 
-        <hr class=" border-dashed border-2 mt-10 mb-10">
+        <hr class=" border-dashed border-2 mt-16 mb-10">
 
         <!-- new products section -->
 
         <section class="mt-5">
             <div>
-                <h3 class="text-center text-2xl font-extrabold	 lg:text-3xl">Our New Products</h3>
-                <p class=" text-center text-base font-medium pl-5 pr-5 ">Dit amet consectetur. Condimentum dignissim
-                    adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <h3 class="text-center font-manrop text-2xl font-extrabold	 lg:text-4xl mb-5">Our New Products</h3>
+                <p class=" text-center font-manrop text-slate-400 text-[14px] lg:text-base  font-medium pl-5 pr-5 ">Dit
+                    amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
             </div>
 
             <hr class=" border-dashed border-2 mt-10 mb-10">
 
 
-            <div class=" grid grid-cols-1 lg:grid-cols-2 lg:ml-20 lg:mr-20   gap-5 ml-5 mr-5">
+            <div class=" grid grid-cols-1 lg:grid-cols-2   gap-5 ml-5 mr-5">
 
                 <!-- product 1 -->
                 <div
@@ -289,15 +309,16 @@
                         <img src="/Images/5.png" alt="" class="w-full">
                     </div>
                     <div>
-                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i class="fa-solid fa-eye"></i> 20 <i
-                                class="fa-regular fa-heart"></i> 200</div>
-                        <div class="text-[20px] font-[500]">World Cup Flags Football</div>
-                        <div class="text-sm	font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
-                        <div>
-                            <div class="text-red-500 font-bold text-2">
+                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i
+                                class="fa-solid fa-eye text-slate-400"></i> 20 <i
+                                class="fa-regular fa-heart text-slate-400"></i> 200</div>
+                        <div class="font-manrop text-xl font-extrabold">World Cup Flags Football</div>
+                        <div class="text-base text-slate-400 font-manrop font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
+                        <div class=" lg:flex flex-row justify-between mt-5">
+                            <div class="text-red-500 font-manrop text-lg	font-extrabold ">
                                 Price - \$22.00
                             </div>
-                            <div class="text-sm	font-medium	"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
+                            <div class="text-base mt-4 lg:mt-0 text-slate-400 font-manrop font-medium "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
                                 Free</div>
                         </div>
                     </div>
@@ -311,15 +332,16 @@
                         <img src="/Images/6.png" alt="" class="w-full">
                     </div>
                     <div>
-                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i class="fa-solid fa-eye"></i> 20 <i
-                                class="fa-regular fa-heart"></i> 200</div>
-                        <div class="text-[20px] font-[500]">World Cup Flags Football</div>
-                        <div class="text-sm	font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
-                        <div>
-                            <div class="text-red-500 font-bold text-2">
+                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i
+                                class="fa-solid fa-eye text-slate-400"></i> 20 <i
+                                class="fa-regular fa-heart text-slate-400"></i> 200</div>
+                        <div class="font-manrop text-xl font-extrabold">World Cup Flags Football</div>
+                        <div class="text-base text-slate-400 font-manrop font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
+                        <div class=" lg:flex flex-row justify-between mt-5">
+                            <div class="text-red-500 font-manrop text-lg	font-extrabold ">
                                 Price - \$22.00
                             </div>
-                            <div class="text-sm	font-medium	"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
+                            <div class="text-base mt-4 lg:mt-0 text-slate-400 font-manrop font-medium "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
                                 Free</div>
                         </div>
                     </div>
@@ -333,15 +355,16 @@
                         <img src="/Images/7.png" alt="" class="w-full">
                     </div>
                     <div>
-                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i class="fa-solid fa-eye"></i> 20 <i
-                                class="fa-regular fa-heart"></i> 200</div>
-                        <div class="text-[20px] font-[500]">World Cup Flags Football</div>
-                        <div class="text-sm	font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
-                        <div>
-                            <div class="text-red-500 font-bold text-2">
+                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i
+                                class="fa-solid fa-eye text-slate-400"></i> 20 <i
+                                class="fa-regular fa-heart text-slate-400"></i> 200</div>
+                        <div class="font-manrop text-xl font-extrabold">World Cup Flags Football</div>
+                        <div class="text-base text-slate-400 font-manrop font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
+                        <div class=" lg:flex flex-row justify-between mt-5">
+                            <div class="text-red-500 font-manrop text-lg	font-extrabold ">
                                 Price - \$22.00
                             </div>
-                            <div class="text-sm	font-medium	"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
+                            <div class="text-base mt-4 lg:mt-0 text-slate-400 font-manrop font-medium "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
                                 Free</div>
                         </div>
                     </div>
@@ -355,15 +378,16 @@
                         <img src="/Images/8.png" alt="" class="w-full">
                     </div>
                     <div>
-                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i class="fa-solid fa-eye"></i> 20 <i
-                                class="fa-regular fa-heart"></i> 200</div>
-                        <div class="text-[20px] font-[500]">World Cup Flags Football</div>
-                        <div class="text-sm	font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
-                        <div>
-                            <div class="text-red-500 font-bold text-2">
+                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i
+                                class="fa-solid fa-eye text-slate-400"></i> 20 <i
+                                class="fa-regular fa-heart text-slate-400"></i> 200</div>
+                        <div class="font-manrop text-xl font-extrabold">World Cup Flags Football</div>
+                        <div class="text-base text-slate-400 font-manrop font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
+                        <div class=" lg:flex flex-row justify-between mt-5">
+                            <div class="text-red-500 font-manrop text-lg	font-extrabold ">
                                 Price - \$22.00
                             </div>
-                            <div class="text-sm	font-medium	"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
+                            <div class="text-base mt-4 lg:mt-0 text-slate-400 font-manrop font-medium "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
                                 Free</div>
                         </div>
                     </div>
@@ -376,15 +400,16 @@
                         <img src="/Images/9.png" alt="" class="w-full">
                     </div>
                     <div>
-                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i class="fa-solid fa-eye"></i> 20 <i
-                                class="fa-regular fa-heart"></i> 200</div>
-                        <div class="text-[20px] font-[500]">World Cup Flags Football</div>
-                        <div class="text-sm	font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
-                        <div>
-                            <div class="text-red-500 font-bold text-2">
+                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i
+                                class="fa-solid fa-eye text-slate-400"></i> 20 <i
+                                class="fa-regular fa-heart text-slate-400"></i> 200</div>
+                        <div class="font-manrop text-xl font-extrabold">World Cup Flags Football</div>
+                        <div class="text-base text-slate-400 font-manrop font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
+                        <div class=" lg:flex flex-row justify-between mt-5">
+                            <div class="text-red-500 font-manrop text-lg	font-extrabold ">
                                 Price - \$22.00
                             </div>
-                            <div class="text-sm	font-medium	"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
+                            <div class="text-base mt-4 lg:mt-0 text-slate-400 font-manrop font-medium "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
                                 Free</div>
                         </div>
                     </div>
@@ -398,15 +423,16 @@
                         <img src="/Images/10.png" alt="" class="w-full">
                     </div>
                     <div>
-                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i class="fa-solid fa-eye"></i> 20 <i
-                                class="fa-regular fa-heart"></i> 200</div>
-                        <div class="text-[20px] font-[500]">World Cup Flags Football</div>
-                        <div class="text-sm	font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
-                        <div>
-                            <div class="text-red-500 font-bold text-2">
+                        <div><i class="fa-solid fa-star text-red-600"></i> 5.0 <i
+                                class="fa-solid fa-eye text-slate-400"></i> 20 <i
+                                class="fa-regular fa-heart text-slate-400"></i> 200</div>
+                        <div class="font-manrop text-xl font-extrabold">World Cup Flags Football</div>
+                        <div class="text-base text-slate-400 font-manrop font-medium	">Dolor sit amet consectetur. Ut urna diam quis sagittis. </div>
+                        <div class=" lg:flex flex-row justify-between mt-5">
+                            <div class="text-red-500 font-manrop text-lg	font-extrabold ">
                                 Price - \$22.00
                             </div>
-                            <div class="text-sm	font-medium	"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
+                            <div class="text-base mt-4 lg:mt-0 text-slate-400 font-manrop font-medium "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:
                                 Free</div>
                         </div>
                     </div>
@@ -610,7 +636,7 @@
             <p>Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam
                 proin. </p>
             <p> <i class="fa-regular fa-envelope text-red-500 text-[1.3rem]"></i> &ThickSpace; hockeys@support.com</p>
-            <p><i class="fa-solid fa-phone text-red-500 text-[1.3rem]"></i>  &ThickSpace; (+62)123-321-543</p>
+            <p><i class="fa-solid fa-phone text-red-500 text-[1.3rem]"></i> &ThickSpace; (+62)123-321-543</p>
         </div>
         <div>
             <h3>Company</h3>
